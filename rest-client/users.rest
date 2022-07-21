@@ -1,0 +1,19 @@
+@host = http://localhost:3001
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNjU4NDA5NzYxfQ.nZnIcqF22H3OgIS9jacv1KMw7PYb62nirkDjY2KR5Cc
+
+@password = iLik3Potat0es
+
+### Create a user
+
+POST {{host}}/users
+Content-Type: application/json
+
+{
+    "name": "benito",
+    "password": "{{password}}"
+}
+
+### Get access to the restricted area (if valid token)
+
+GET {{host}}/jwt/restricted
+Authorization: Bearer {{token}}

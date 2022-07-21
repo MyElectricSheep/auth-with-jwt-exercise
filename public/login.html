@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Authentication/Authorization Exercise</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+
+  <body>
+      <h1>Login to your account</h1>
+      <br>
+      <h2>Exercise 1</h2>
+      <form action="connect" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="john" /><br /><br />
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password" placeholder="doe"/><br /><br />
+        <input type="submit" value="Submit (without SQL)" />
+      </form>
+      <br />
+      <hr />
+      <br />
+      <h2>Exercise 2</h2>
+      <form action="connectSQL" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="benito" /><br /><br />
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password" placeholder="iLik3Potat0es" /><br /><br />
+        <input type="submit" value="Submit (with SQL)" />
+      </form>
+    </div>
+  </body>
+</html>
